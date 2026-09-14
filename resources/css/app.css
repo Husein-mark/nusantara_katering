@@ -1,0 +1,264 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-serif: 'Source Serif 4', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+/* =====================================================================
+   Tema "Rasa Nusantara" — dasbor katering
+   Palet warna dan tipografi khusus untuk sistem dasbor admin katering.
+   Dirancang tanpa ikon: hierarki dan status disampaikan lewat warna teks,
+   garis tipis, dan tipografi, bukan simbol grafis.
+   ===================================================================== */
+:root {
+    --kn-ink: #24231f;
+    --kn-forest: #1e3b32;
+    --kn-forest-dark: #142821;
+    --kn-brass: #a9812e;
+    --kn-brass-dark: #8a6a24;
+    --kn-paper: #f6f4ee;
+    --kn-panel: #ffffff;
+    --kn-line: #ddd6c4;
+    --kn-muted: #766f5c;
+    --kn-moss: #3f6b4f;
+    --kn-slate: #4c5b72;
+    --kn-brick: #8b3a3a;
+}
+
+.kn-page {
+    background: var(--kn-paper);
+    color: var(--kn-ink);
+    min-height: 100vh;
+    font-family: var(--font-sans);
+}
+
+.kn-shell {
+    max-width: 74rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+}
+
+.kn-masthead {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 2px solid var(--kn-forest);
+    padding-bottom: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.kn-brand {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1.85rem;
+    color: var(--kn-forest);
+    line-height: 1.15;
+}
+
+.kn-brand span {
+    display: block;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--kn-muted);
+    letter-spacing: 0.02em;
+    margin-top: 0.35rem;
+}
+
+.kn-context {
+    text-align: right;
+    font-size: 0.9rem;
+    color: var(--kn-muted);
+}
+
+.kn-context strong {
+    display: block;
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--kn-ink);
+}
+
+.kn-summary {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--kn-line);
+    border: 1px solid var(--kn-line);
+    margin-bottom: 2.5rem;
+}
+
+.kn-summary-item {
+    background: var(--kn-panel);
+    padding: 1.15rem 1.4rem;
+}
+
+.kn-summary-number {
+    font-family: var(--font-serif);
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--kn-forest);
+    line-height: 1;
+}
+
+.kn-summary-label {
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.82rem;
+    color: var(--kn-muted);
+}
+
+.kn-section-title {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--kn-ink);
+    margin-bottom: 1rem;
+}
+
+.kn-table-wrap {
+    background: var(--kn-panel);
+    border: 1px solid var(--kn-line);
+    overflow-x: auto;
+}
+
+.kn-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+}
+
+.kn-table caption {
+    text-align: left;
+    padding: 1rem 1.25rem 0;
+    caption-side: top;
+}
+
+.kn-table thead th {
+    text-align: left;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 0.78rem;
+    color: var(--kn-forest);
+    padding: 0.9rem 1.1rem;
+    border-bottom: 2px solid var(--kn-forest);
+    white-space: nowrap;
+}
+
+.kn-table tbody td {
+    padding: 0.95rem 1.1rem;
+    border-bottom: 1px solid var(--kn-line);
+    vertical-align: top;
+    color: var(--kn-ink);
+}
+
+.kn-table tbody tr:hover {
+    background: #faf9f4;
+}
+
+.kn-order-id {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    color: var(--kn-forest);
+}
+
+.kn-customer-name {
+    font-weight: 500;
+}
+
+.kn-customer-city {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--kn-muted);
+    margin-top: 0.15rem;
+}
+
+.kn-item-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.kn-item-list li {
+    padding: 0.15rem 0;
+}
+
+.kn-item-list li + li {
+    border-top: 1px dashed var(--kn-line);
+    margin-top: 0.15rem;
+    padding-top: 0.35rem;
+}
+
+.kn-item-qty {
+    color: var(--kn-brass-dark);
+    font-weight: 600;
+}
+
+.kn-item-category {
+    color: var(--kn-muted);
+    font-size: 0.82rem;
+}
+
+.kn-delivery-courier {
+    font-weight: 500;
+}
+
+.kn-delivery-method {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--kn-muted);
+    margin-top: 0.15rem;
+}
+
+.kn-status {
+    display: inline-block;
+    padding: 0.25rem 0.65rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+    border: 1px solid currentColor;
+    white-space: nowrap;
+}
+
+.kn-status-menunggu_pembayaran { color: var(--kn-brass-dark); }
+.kn-status-diproses { color: var(--kn-slate); }
+.kn-status-dikirim { color: var(--kn-forest); }
+.kn-status-selesai { color: var(--kn-moss); }
+.kn-status-dibatalkan { color: var(--kn-brick); }
+
+.kn-order-total {
+    font-weight: 600;
+}
+
+.kn-pagination {
+    margin-top: 1.75rem;
+}
+
+.kn-pagination nav > div {
+    color: var(--kn-muted);
+    font-size: 0.85rem;
+}
+
+.kn-footnote {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--kn-line);
+    font-size: 0.82rem;
+    color: var(--kn-muted);
+}
+
+@media (max-width: 40rem) {
+    .kn-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .kn-context {
+        text-align: left;
+    }
+}

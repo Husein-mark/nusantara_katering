@@ -1,0 +1,16 @@
+<?php
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class CourierFactory extends Factory
+{
+    public function definition(): array
+    {
+        return [
+            'name'  => fake()->unique()->name(),
+            'phone' => '08' . fake()->numerify('##########'),
+        ];
+    }
+}

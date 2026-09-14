@@ -1,0 +1,69 @@
+{
+  "_fonts-DEVWeYD1.css": {
+    "file": "assets/fonts-DEVWeYD1.css",
+    "src": "_fonts-DEVWeYD1.css"
+  },
+  "_instrument-sans-400-normal-D1W7dsQl.woff": {
+    "file": "assets/instrument-sans-400-normal-D1W7dsQl.woff",
+    "src": "_instrument-sans-400-normal-D1W7dsQl.woff"
+  },
+  "_instrument-sans-400-normal-DRC__1Mx.woff2": {
+    "file": "assets/instrument-sans-400-normal-DRC__1Mx.woff2",
+    "src": "_instrument-sans-400-normal-DRC__1Mx.woff2"
+  },
+  "_instrument-sans-500-normal-Dk9ku72i.woff2": {
+    "file": "assets/instrument-sans-500-normal-Dk9ku72i.woff2",
+    "src": "_instrument-sans-500-normal-Dk9ku72i.woff2"
+  },
+  "_instrument-sans-500-normal-Z6ESRlEs.woff": {
+    "file": "assets/instrument-sans-500-normal-Z6ESRlEs.woff",
+    "src": "_instrument-sans-500-normal-Z6ESRlEs.woff"
+  },
+  "_instrument-sans-600-normal-B7fBEWYG.woff2": {
+    "file": "assets/instrument-sans-600-normal-B7fBEWYG.woff2",
+    "src": "_instrument-sans-600-normal-B7fBEWYG.woff2"
+  },
+  "_instrument-sans-600-normal-B9e8oLYv.woff": {
+    "file": "assets/instrument-sans-600-normal-B9e8oLYv.woff",
+    "src": "_instrument-sans-600-normal-B9e8oLYv.woff"
+  },
+  "_source-serif-4-500-normal-CUHe9xxf.woff2": {
+    "file": "assets/source-serif-4-500-normal-CUHe9xxf.woff2",
+    "src": "_source-serif-4-500-normal-CUHe9xxf.woff2"
+  },
+  "_source-serif-4-500-normal-DVVamBqs.woff": {
+    "file": "assets/source-serif-4-500-normal-DVVamBqs.woff",
+    "src": "_source-serif-4-500-normal-DVVamBqs.woff"
+  },
+  "_source-serif-4-600-normal-DMD1h6_f.woff": {
+    "file": "assets/source-serif-4-600-normal-DMD1h6_f.woff",
+    "src": "_source-serif-4-600-normal-DMD1h6_f.woff"
+  },
+  "_source-serif-4-600-normal-DouSKlru.woff2": {
+    "file": "assets/source-serif-4-600-normal-DouSKlru.woff2",
+    "src": "_source-serif-4-600-normal-DouSKlru.woff2"
+  },
+  "_source-serif-4-700-normal-3V4Pv1hj.woff": {
+    "file": "assets/source-serif-4-700-normal-3V4Pv1hj.woff",
+    "src": "_source-serif-4-700-normal-3V4Pv1hj.woff"
+  },
+  "_source-serif-4-700-normal-CGGdTIBe.woff2": {
+    "file": "assets/source-serif-4-700-normal-CGGdTIBe.woff2",
+    "src": "_source-serif-4-700-normal-CGGdTIBe.woff2"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-BlOAsS4J.css",
+    "name": "app",
+    "names": [
+      "app.css"
+    ],
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BvRk9kiK.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
